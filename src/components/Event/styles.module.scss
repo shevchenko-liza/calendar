@@ -1,0 +1,28 @@
+.top {
+    height: 100vh;
+    position: fixed;
+    left: 37%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: green;
+    width: 500px;
+    height: 70px;
+    display: flex;
+}
+
+.box {
+    background-color: grey;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    gap: 450px;
+}
+
+.icon {}
+
+.close {}

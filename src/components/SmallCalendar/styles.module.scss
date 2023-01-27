@@ -1,0 +1,103 @@
+.icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+.box {
+    margin: auto;
+    max-width: 1600px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.buttonMain {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.block {
+    background-color: rgb(255, 240, 251);
+    width: 450px;
+    height: 400px;
+    margin-bottom: 30px;
+    position: absolute;
+}
+
+.boxDate {
+    display: flex;
+}
+
+.gap {
+    display: flex;
+    gap: 15px;
+}
+
+.left {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.right {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.month {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+.mainWeek {
+    display: flex;
+    margin: auto;
+}
+
+.weeks {
+    margin-top: 30px;
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    flex: 1;
+}
+
+.dayCalendar {
+    margin-top: 10px;
+    color: red;
+    display: grid;
+    font-size: 15px;
+    flex: 1;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    height: 6vh;
+    flex: 1;
+    margin: auto;
+}
+
+.border {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
