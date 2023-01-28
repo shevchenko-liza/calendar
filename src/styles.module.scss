@@ -15,15 +15,11 @@ body {
 }
 
 .box {
-    // height: 100vh;
-    // color: red;
-    // display: flex;
-    // flex: 1;
-    // flex-direction: column;
     display: flex;
     flex-direction: column;
     height: 100vh;
     margin-top: 10px;
+    flex: 1;
 }
 
 .top {
@@ -33,4 +29,5 @@ body {
 .title {
     display: flex;
     margin: auto;
+    flex: 1;
 }

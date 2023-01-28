@@ -1,11 +1,16 @@
 import React from 'react';
-import { GlContext } from '../../Global/Context';
 import { useContext } from 'react';
+
+import { GlContext } from '../../Global/Context';
+
+import classes from './styles.module.scss'
 
 export const Button = () => {
     const { setShowEventModal } = useContext(GlContext)
     return (
-        <button onClick={() => setShowEventModal(true)}>Add</button>
+        <div className={classes.top}>
+            <button className={classes.btn} onClick={() => setShowEventModal(true)}>Create</button>
+        </div>
     );
 }
 

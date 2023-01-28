@@ -1,16 +1,18 @@
 import React from 'react';
 
-import classes from './styles.module.scss'
+import classes from './styles.module.scss';
 
-import icon from './photo/smCalendar.jpg'
-import icon1 from './photo/calen.jpg'
+import icon from './photo/smCalendar.jpg';
+import icon1 from './photo/calen.jpg';
+
+import { GetMonth } from '../log';
+import { GlContext } from '../../Global/Context';
 
 import dayjs from 'dayjs';
 
+import { useContext } from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-
-import { GetMonth } from '../log';;
 
 export const SmallCalendar = () => {
     const [open, setOpen] = useState(false)
@@ -24,16 +26,18 @@ export const SmallCalendar = () => {
     function handleNextMonth() {
         setCurrentMonth(currentMonthIndex + 1);
     }
+    const { setSmallCalendar, setDay } = useContext(GlContext);
 
     const [current, setCurrent] = useState(GetMonth());
     useEffect(() => {
         setCurrent(GetMonth(currentMonthIndex));
     }, [currentMonthIndex])
 
-    // const getCurrentDayClass=({day}) =>{
-    // return(
-    // day.format("DD-MM-YY") === dayjs().format("DD-MM-YY") ? <img className={classes.today} src={icon1} /> : ""
-    // )}
+    function getDay(day) {
+        return (
+            day.format("DD-MM-YY") === dayjs().format("DD-MM-YY") ? <img className={classes.today} src={icon1} /> : ""
+        )
+    }
     return (
         <div className={classes.box}>
             <button onClick={() => setOpen(true)} className={classes.buttonMain}>
@@ -73,8 +77,10 @@ export const SmallCalendar = () => {
                         <div className={classes.title}
                             key={index}>
                             {idx.map((day, item) => (
-                                <button key={item.id} className={classes.border} >
+                                <button onClick={() => { setSmallCalendar(currentMonthIndex); setDay(day); }}
+                                    key={item.id} className={classes.border} >
                                     <div className={classes.dayCalendar}>{day.format("D")}</div>
+                                    <div className={classes.getDays}>{getDay(day)}</div>
                                 </button>
                             ))}
                         </div>

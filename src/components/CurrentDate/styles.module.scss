@@ -2,6 +2,7 @@
     cursor: pointer;
     background-color: transparent;
     border-color: transparent;
+    padding-bottom: 5px;
 }
 
 .right {
@@ -9,17 +10,18 @@
     background-color: transparent;
     border-color: transparent;
     margin-left: 8px;
+    padding-top: 2px;
 }
 
 .box {
     margin: auto;
-    width: 500px;
+    width: 550px;
     display: flex;
 }
 
 .gap {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .date {

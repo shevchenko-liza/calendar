@@ -2,6 +2,7 @@
     width: 45px;
     height: 45px;
     margin-bottom: 15px;
+    margin-left: 100px;
 }
 
 .box {
@@ -23,6 +24,7 @@
     height: 400px;
     margin-bottom: 30px;
     position: absolute;
+    margin-left: 110px;
 }
 
 .boxDate {
@@ -100,4 +102,15 @@
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
+}
+
+.today {
+    width: 10px;
+    height: 10px;
+    margin-left: 32px;
+    transform: translateY(-19px);
+}
+
+.border {
+    display: grid;
 }

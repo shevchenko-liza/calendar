@@ -9,20 +9,124 @@
 }
 
 .form {
-    background-color: green;
+    background-color: rgb(233, 228, 205);
     width: 500px;
-    height: 70px;
-    display: flex;
+    height: 550px;
 }
 
-.box {
-    background-color: grey;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    gap: 450px;
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
 }
-
-.icon {}
 
 .close {}
+
+.dayBlock {
+    display: flex;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 50px;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    float: right;
+    color: rgb(144, 64, 64);
+}
+
+.context {
+    margin: auto;
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+.titleN {
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.boxName {
+    width: 400px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.dtBox {
+    display: flex;
+    gap: 5px;
+}
+
+.fullDate {
+    margin-left: 20px;
+}
+
+.dayBlock {
+    margin-top: 30px;
+}
+
+.dsTitle {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.discription {
+    width: 400px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.btnSubmit {
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(144, 64, 64);
+    border-color: transparent;
+}
+
+.timeBlock {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.timeSel {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.colon {
+    font-size: 25px;
+}
+
+.nameTime {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 3px;
+}
+
+.delet {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.buttonBox {
+    display: flex;
+    margin-top: 60px;
+    float: right;
+    gap: 30px;
+}

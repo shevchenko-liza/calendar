@@ -1,9 +1,13 @@
 import React from 'react';
-import classes from './styles.module.scss'
-import { GlContext } from '../../Global/Context';
 import { useContext } from 'react';
-import dayjs
-    from 'dayjs';
+
+import classes from './styles.module.scss'
+
+import { GlContext } from '../../Global/Context';
+import { Button } from '../Button';
+
+import dayjs from 'dayjs';
+
 export const CurrentDate = () => {
     const { month, setMonth } = useContext(GlContext);
     function handlePrevMonth() {
@@ -14,6 +18,7 @@ export const CurrentDate = () => {
     }
     return (
         <div className={classes.box}>
+            <Button />
             <div className={classes.gap}>
                 <button onClick={handlePrevMonth} className={classes.left}>
                     <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">

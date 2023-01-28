@@ -1,7 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+
 import App from './App'
+
 import { ContextWrapper } from './Global/ContextWrapper'
+
 import './styles.module.scss'
 
 const MOUNT_POINT = document.getElementById('root')
